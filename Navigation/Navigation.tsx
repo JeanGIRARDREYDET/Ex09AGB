@@ -5,8 +5,7 @@ import BankAcountScreen from '../Screen/BankAccount'
 
 import  {NavigationContainer} from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import Icon from 'react-native-vector-icons/Ionicons'
-
+import Icon from 'react-native-vector-icons/FontAwesome'
 
 
 export type RootStackParamList = {
@@ -25,12 +24,12 @@ const Navigation = () => {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
-            if (route.name === 'Statistiques') {
+            if (route.name === 'Statistics') {
               iconName = focused
-                ? 'stats-chart-outline'
-                : 'ios-information-circle-outline';
-            } else if (route.name === 'Revenus') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
+                ? 'More'
+                : 'More';
+            } else if (route.name === 'Home') {
+              iconName = focused ? 'home' : 'home';
             }
             // You can return any component that you like here!
             return  <Icon name="information-circle-outline" />//<ion-icon name={iconName} size={size} color={color}></ion-icon>;
