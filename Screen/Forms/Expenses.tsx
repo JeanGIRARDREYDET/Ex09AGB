@@ -3,6 +3,7 @@ import { TextInput, Text, Button, Alert, View, StyleSheet} from 'react-native';
 import * as yup from 'yup'
 import { Field,  Formik, FormikProps } from 'formik'
 import SelectDropdown from 'react-native-select-dropdown'
+import {createAccount} from '../../Models/BankAccount'
 /*
 
 Un bénéficiaire (nom, prénom)
@@ -23,11 +24,9 @@ const countries = ["food",
     "Others"]
 
 const Form = () => {
+  createAccount();
   return (
 
-
-
-    
 <Formik
         initialValues={{ 
           beneficiary: '',

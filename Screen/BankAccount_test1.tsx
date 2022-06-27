@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { SafeAreaView, View, Text, TextInput, FlatList, Pressable } from "react-native";
-import { Realm,{} createRealmContext } from 'realm'
+import  Realm from '
+
 class Task extends Realm.Object {
   _id!: Realm.BSON.ObjectId;
   description!: string;

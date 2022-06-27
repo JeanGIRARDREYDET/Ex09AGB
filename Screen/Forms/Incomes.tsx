@@ -6,7 +6,7 @@ import SelectDropdown from 'react-native-select-dropdown'
 import { NavigationContainer , useNavigation } from "@react-navigation/native";
 import { getHeaderTitle } from '@react-navigation/elements';
 import { createNativeStackNavigator, NativeStackScreenProps } from "@react-navigation/native-stack";
-
+import {RowType as AccountRowType,RowSchema as AccountRowSchema} from '../../Models/BankAccount'
 /*
 
 Un bénéficiaire (nom, prénom)
@@ -14,7 +14,6 @@ Un montant
 Une date (date de déclaration)
 Une catégorie
 Un champ de commentaires
-
 */
 
 export type RootStackParamList = {
@@ -22,8 +21,6 @@ export type RootStackParamList = {
   Expenses: undefined;
   Profile: undefined;
 };
-
-
 
 const countries = ["Salary and similar","Financial income","Annuity","alimony","Unemployment benefit",
 "Social Security benefits",

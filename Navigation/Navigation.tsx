@@ -32,7 +32,7 @@ const Navigation = () => {
               iconName = focused ? 'home' : 'home';
             }
             // You can return any component that you like here!
-            return  <Icon name="information-circle-outline" />//<ion-icon name={iconName} size={size} color={color}></ion-icon>;
+            return  <Icon name="headphones" />//<ion-icon name={iconName} size={size} color={color}></ion-icon>;
           },
           tabBarActiveTintColor: 'tomato',
           tabBarInactiveTintColor: 'gray',
